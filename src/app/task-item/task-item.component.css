@@ -1,0 +1,12 @@
+.NotStarted {
+    background-color: red;
+    color: white;
+}
+.InProgress {
+    background-color:yellow;
+    color: white;
+}
+.Completed {
+    background-color: green;
+    color: white;
+}
