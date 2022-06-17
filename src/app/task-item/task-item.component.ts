@@ -20,16 +20,14 @@ export class TaskItemComponent implements OnInit {
 
   addTask() {
     this.task.push({
-      id: Math.random(),
+      id: this.task.length,
       details: this.taskDetails,
       status: this.selectedStatus,
     });
   }
 
   deleteTask(Id: string) {
-
-    this.task.filter((data: { taskId: string; }) => this.task.id != Id);  
-    // this.task.splice(this.task.findIndex((data: { taskId: string; }) => this.task.id === Id) , 1)
+    this.task.splice(Id, 1);
   }
   clearForm() {
     // this.taskDetails = "";
